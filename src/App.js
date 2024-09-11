@@ -1,23 +1,14 @@
-import logo from './logo.svg';
-import './App.css';
+import './css/app.css';
+import Scene from './components/Scene';
+import BlockPad from './components/BlockPad';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="App" style={{ display: 'flex' }}>
+      <div style={{ width: '50vw', height: '100vh', backgroundColor: '#f0f0f0' }}>
+        <BlockPad />
+      </div>
+      <Scene />
     </div>
   );
 }
